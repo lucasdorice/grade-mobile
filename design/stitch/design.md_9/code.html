@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-light: #A29BFE;
+            --accent-bg: #6C5CE720;
+            --success: #00B894;
+            --warning: #FDCB6E;
+            --danger: #FF6B6B;
+            --info: #74B9FF;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }
+        .confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            border-radius: 2px;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex items-center justify-center min-h-screen p-4 overflow-hidden text-slate-50">
+<div class="relative w-full max-w-[375px] h-[812px] bg-[var(--background)] rounded-[48px] shadow-2xl border-[8px] border-[#222] overflow-hidden flex flex-col">
+<div class="flex justify-between items-center px-8 pt-4 pb-2 text-sm font-semibold">
+<span>9:41</span>
+<div class="flex gap-1.5 items-center">
+<span class="material-symbols-outlined text-[18px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px]">battery_full</span>
+</div>
+</div>
+<div class="absolute inset-0 pointer-events-none opacity-40">
+<div class="confetti bg-[#FF6B6B] top-20 left-10 rotate-12"></div>
+<div class="confetti bg-[#6C5CE7] top-32 right-12 -rotate-45"></div>
+<div class="confetti bg-[#00B894] top-64 left-16 rotate-[30deg]"></div>
+<div class="confetti bg-[#FDCB6E] top-40 left-1/2 rotate-12"></div>
+<div class="confetti bg-[#74B9FF] bottom-40 right-10 rotate-45"></div>
+<div class="confetti bg-[#FD79A8] bottom-60 left-8 -rotate-12"></div>
+</div>
+<div class="px-6 pt-6 pb-2 relative z-10">
+<div class="flex justify-center gap-2 mb-8">
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+</div>
+<h2 class="text-[24px] font-bold text-center leading-tight">Sua grade está pronta! 🎓</h2>
+<p class="text-[var(--text-secondary)] text-center text-sm mt-2">Tudo organizado para o seu semestre.</p>
+</div>
+<div class="flex-1 px-6 py-4 overflow-hidden flex flex-col justify-center gap-3 relative z-10">
+<div class="flex items-center gap-4 bg-[var(--surface)] p-3.5 rounded-2xl border border-[var(--border)]">
+<span class="text-[12px] font-bold text-[var(--text-tertiary)] w-8">SEG</span>
+<div class="flex flex-wrap gap-2 flex-1">
+<div class="px-3 py-1.5 rounded-lg bg-[#6C5CE7]/20 border border-[#6C5CE7]/30">
+<span class="text-[10px] font-semibold text-[#A29BFE] uppercase">Cálculo I</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-[#FF6B6B]/20 border border-[#FF6B6B]/30">
+<span class="text-[10px] font-semibold text-[#FF8E8E] uppercase">Algoritmos</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-[var(--surface)] p-3.5 rounded-2xl border border-[var(--border)]">
+<span class="text-[12px] font-bold text-[var(--text-tertiary)] w-8">TER</span>
+<div class="flex flex-wrap gap-2 flex-1">
+<div class="px-3 py-1.5 rounded-lg bg-[#00B894]/20 border border-[#00B894]/30">
+<span class="text-[10px] font-semibold text-[#55EFC4] uppercase">Física I</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-[var(--surface)] p-3.5 rounded-2xl border border-[var(--border)]">
+<span class="text-[12px] font-bold text-[var(--text-tertiary)] w-8">QUA</span>
+<div class="flex flex-wrap gap-2 flex-1">
+<div class="px-3 py-1.5 rounded-lg bg-[#6C5CE7]/20 border border-[#6C5CE7]/30">
+<span class="text-[10px] font-semibold text-[#A29BFE] uppercase">Cálculo I</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-[#74B9FF]/20 border border-[#74B9FF]/30">
+<span class="text-[10px] font-semibold text-[#81ECEC] uppercase">Web Dev</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-[var(--surface)] p-3.5 rounded-2xl border border-[var(--border)]">
+<span class="text-[12px] font-bold text-[var(--text-tertiary)] w-8">QUI</span>
+<div class="flex flex-wrap gap-2 flex-1">
+<div class="px-3 py-1.5 rounded-lg bg-[#FDCB6E]/20 border border-[#FDCB6E]/30">
+<span class="text-[10px] font-semibold text-[#FFEAA7] uppercase">Sistemas</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-[var(--surface)] p-3.5 rounded-2xl border border-[var(--border)]">
+<span class="text-[12px] font-bold text-[var(--text-tertiary)] w-8">SEX</span>
+<div class="flex flex-wrap gap-2 flex-1">
+<div class="px-3 py-1.5 rounded-lg bg-[#FF6B6B]/20 border border-[#FF6B6B]/30">
+<span class="text-[10px] font-semibold text-[#FF8E8E] uppercase">Algoritmos</span>
+</div>
+<div class="px-3 py-1.5 rounded-lg bg-[#00B894]/20 border border-[#00B894]/30">
+<span class="text-[10px] font-semibold text-[#55EFC4] uppercase">Física I</span>
+</div>
+</div>
+</div>
+</div>
+<div class="px-6 pb-12 pt-4 relative z-10">
+<button class="w-full bg-[var(--accent)] hover:bg-[var(--accent-light)] transition-all active:scale-[0.98] py-4 rounded-2xl flex items-center justify-center gap-2 font-bold text-[17px] shadow-lg shadow-[#6C5CE7]/20">
+            Começar a usar!
+            <span class="text-xl">🚀</span>
+</button>
+</div>
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-32 h-1.5 bg-white/10 rounded-full"></div>
+</div>
+
+</body></html>

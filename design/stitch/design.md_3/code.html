@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-light: #A29BFE;
+            --accent-bg: rgba(108, 92, 231, 0.12);
+            --success: #00B894;
+            --danger: #FF6B6B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }
+        .ios-bottom-sheet {
+            background-color: var(--surface-elevated);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            box-shadow: 0 -10px 40px rgba(0,0,0,0.5);
+        }
+        .day-chip-active {
+            background-color: var(--accent);
+            color: white;
+        }
+        .day-chip-inactive {
+            background-color: var(--surface);
+            color: var(--text-secondary);
+            border: 1px solid var(--border);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<div class="h-12 w-full"></div>
+<main class="flex-1 px-6 pb-20">
+<div class="flex justify-center items-center gap-2 mb-8 mt-2">
+<div class="w-2 h-2 rounded-full bg-[var(--text-tertiary)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--text-tertiary)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--text-tertiary)] opacity-30"></div>
+</div>
+<div class="mb-8">
+<h2 class="text-[22px] font-semibold text-[var(--text-primary)]">Monte sua grade</h2>
+<p class="text-sm text-[var(--text-secondary)] mt-1">Adicione suas disciplinas do semestre</p>
+</div>
+<div class="space-y-3">
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-center gap-4 border border-[var(--border)]">
+<div class="w-3 h-3 rounded-full bg-[#6C5CE7]"></div>
+<div class="flex-1">
+<h4 class="text-base font-medium">Algoritmos II</h4>
+<p class="text-xs text-[var(--text-secondary)]">Segunda • 08:00 - 09:40</p>
+</div>
+<button class="text-[var(--text-tertiary)]">
+<span class="material-symbols-outlined text-xl">more_vert</span>
+</button>
+</div>
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-center gap-4 border border-[var(--border)]">
+<div class="w-3 h-3 rounded-full bg-[#00B894]"></div>
+<div class="flex-1">
+<h4 class="text-base font-medium">Cálculo Diferencial</h4>
+<p class="text-xs text-[var(--text-secondary)]">Terça, Quinta • 10:00 - 11:40</p>
+</div>
+<button class="text-[var(--text-tertiary)]">
+<span class="material-symbols-outlined text-xl">more_vert</span>
+</button>
+</div>
+<button class="w-full border-2 border-dashed border-[var(--border)] p-4 rounded-[12px] flex items-center justify-center gap-2 text-[var(--text-secondary)] hover:bg-[var(--surface)] transition-colors">
+<span class="material-symbols-outlined text-xl">add</span>
+<span class="font-medium text-sm">Adicionar disciplina</span>
+</button>
+</div>
+<div class="fixed bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-[var(--background)] to-transparent pt-10">
+<button class="w-full bg-[var(--accent)] text-white py-4 rounded-full font-semibold text-base shadow-lg active:scale-[0.98] transition-transform">
+                Próximo
+            </button>
+</div>
+</main>
+<div class="fixed inset-0 bg-black/60 z-40 backdrop-blur-sm"></div>
+<div class="fixed bottom-0 left-0 right-0 z-50 ios-bottom-sheet px-6 pt-2 pb-10">
+<div class="flex justify-center mb-6">
+<div class="w-10 h-1 rounded-full bg-[var(--border)]"></div>
+</div>
+<h3 class="text-lg font-semibold mb-6">Nova Disciplina</h3>
+<form class="space-y-5">
+<div class="space-y-2">
+<label class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">Nome da disciplina</label>
+<input class="w-full bg-[var(--surface)] border-[var(--border)] rounded-xl text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:ring-[var(--accent)] focus:border-[var(--accent)]" placeholder="Ex: Engenharia de Software" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">Professor (opcional)</label>
+<input class="w-full bg-[var(--surface)] border-[var(--border)] rounded-xl text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:ring-[var(--accent)] focus:border-[var(--accent)]" placeholder="Nome do docente" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">Dias da semana</label>
+<div class="flex flex-wrap gap-2">
+<button class="day-chip-inactive px-3 py-1.5 rounded-lg text-xs font-medium" type="button">SEG</button>
+<button class="day-chip-active px-3 py-1.5 rounded-lg text-xs font-medium" type="button">TER</button>
+<button class="day-chip-inactive px-3 py-1.5 rounded-lg text-xs font-medium" type="button">QUA</button>
+<button class="day-chip-active px-3 py-1.5 rounded-lg text-xs font-medium" type="button">QUI</button>
+<button class="day-chip-inactive px-3 py-1.5 rounded-lg text-xs font-medium" type="button">SEX</button>
+<button class="day-chip-inactive px-3 py-1.5 rounded-lg text-xs font-medium" type="button">SAB</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">Início</label>
+<div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex items-center justify-between">
+<span class="text-[var(--text-primary)]">08:00</span>
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-lg">schedule</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-medium text-[var(--text-secondary)] uppercase tracking-wider">Fim</label>
+<div class="bg-[var(--surface)] border border-[var(--border)] rounded-xl p-3 flex items-center justify-between">
+<span class="text-[var(--text-primary)]">09:40</span>
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-lg">schedule</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-[var(--accent)] text-white py-4 rounded-xl font-semibold text-base mt-4 active:opacity-80" type="button">
+                Salvar Disciplina
+            </button>
+</form>
+</div>
+
+</body></html>

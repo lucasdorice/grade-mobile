@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-light: #A29BFE;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<div class="h-12 w-full flex items-center justify-between px-6 text-xs font-semibold">
+<span>9:41</span>
+<div class="flex gap-1.5">
+<span class="material-symbols-outlined text-[14px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[14px]">wifi</span>
+<span class="material-symbols-outlined text-[14px]">battery_full</span>
+</div>
+</div>
+<main class="flex-1 flex flex-col px-6 pb-12">
+<div class="flex justify-center gap-2 mt-4 mb-12">
+<div class="w-2 h-2 rounded-full bg-[var(--surface)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--surface)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--surface)]"></div>
+</div>
+<div class="text-center mb-12">
+<h2 class="text-[22px] font-semibold text-[var(--text-primary)] leading-tight">
+                Como podemos te chamar?
+            </h2>
+</div>
+<div class="flex-1 flex flex-col items-center justify-start pt-8">
+<input autofocus="" class="w-full bg-transparent border-0 border-b-2 border-[var(--border)] py-4 text-center text-2xl focus:ring-0 focus:border-[var(--accent)] placeholder:text-[var(--text-tertiary)] transition-colors" placeholder="Seu nome" type="text"/>
+</div>
+<div class="flex flex-col gap-4 w-full">
+<button class="w-full h-[56px] rounded-full bg-[var(--accent)] opacity-50 text-white font-semibold text-base cursor-not-allowed">
+                Próximo
+            </button>
+<button class="w-full py-2 text-[var(--text-secondary)] font-medium text-base">
+                Voltar
+            </button>
+</div>
+</main>
+<div class="h-8 flex justify-center items-end pb-2">
+<div class="w-32 h-1.5 bg-white/20 rounded-full"></div>
+</div>
+
+</body></html>

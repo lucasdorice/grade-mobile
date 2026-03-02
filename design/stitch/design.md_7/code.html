@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Task Hub Manager - Grade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-bg: rgba(108, 92, 231, 0.2);
+            --success: #00B894;
+            --warning: #FDCB6E;
+            --danger: #FF6B6B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ios-blur {
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 px-6 pt-14 pb-4 bg-[var(--background)]">
+<div class="flex items-center justify-between mb-2">
+<h1 class="text-[28px] font-bold">Tarefas</h1>
+<span class="bg-[var(--danger)] text-white text-[12px] font-bold px-2.5 py-0.5 rounded-full">3 pendentes</span>
+</div>
+</header>
+<main class="flex-1 px-6 pb-24">
+<section class="mb-8">
+<h3 class="text-[18px] font-semibold text-[var(--text-secondary)] mb-4">Pendentes</h3>
+<div class="space-y-3">
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-start gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.3)] border border-transparent active:scale-[0.98] transition-transform">
+<button class="mt-1 w-6 h-6 rounded-full border-2 border-[var(--border)] flex items-center justify-center shrink-0">
+</button>
+<div class="flex-1">
+<p class="text-[16px] font-regular mb-2 text-[var(--text-primary)]">Finalizar protótipo de UI</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-medium bg-[#6C5CE726] text-[#6C5CE7]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#6C5CE7] mr-1.5"></span>
+                                Design Mobile
+                            </span>
+<span class="text-[var(--danger)] text-[12px] font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                                Ontem, 23:59
+                            </span>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-start gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.3)] border border-transparent active:scale-[0.98] transition-transform">
+<button class="mt-1 w-6 h-6 rounded-full border-2 border-[var(--border)] flex items-center justify-center shrink-0">
+</button>
+<div class="flex-1">
+<p class="text-[16px] font-regular mb-2 text-[var(--text-primary)]">Entrega do Exercício 4</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-medium bg-[#00B89426] text-[#00B894]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#00B894] mr-1.5"></span>
+                                Banco de Dados
+                            </span>
+<span class="text-[var(--warning)] text-[12px] font-medium flex items-center gap-1">
+                                Hoje, 18:00
+                            </span>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-start gap-4 shadow-[0_2px_8px_rgba(0,0,0,0.3)] border border-transparent active:scale-[0.98] transition-transform">
+<button class="mt-1 w-6 h-6 rounded-full border-2 border-[var(--border)] flex items-center justify-center shrink-0">
+</button>
+<div class="flex-1">
+<p class="text-[16px] font-regular mb-2 text-[var(--text-primary)]">Relatório Semestral</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-medium bg-[#74B9FF26] text-[#74B9FF]">
+<span class="w-1.5 h-1.5 rounded-full bg-[#74B9FF] mr-1.5"></span>
+                                Gestão de Projetos
+                            </span>
+<span class="text-[var(--text-secondary)] text-[12px] font-medium flex items-center gap-1">
+                                Quinta, 10 Mar
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<button class="flex items-center gap-2 mb-4">
+<h3 class="text-[18px] font-semibold text-[var(--text-tertiary)]">Concluídas (5)</h3>
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-[20px]">expand_more</span>
+</button>
+<div class="space-y-3 opacity-50">
+<div class="bg-[var(--surface)] p-4 rounded-[12px] flex items-start gap-4 border border-transparent">
+<div class="mt-1 w-6 h-6 rounded-full bg-[var(--success)] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white text-[16px] font-bold">check</span>
+</div>
+<div class="flex-1">
+<p class="text-[16px] font-regular mb-2 text-[var(--text-primary)] line-through">Configurar ambiente React</p>
+<div class="flex flex-wrap items-center gap-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full text-[12px] font-medium bg-[#6C5CE726] text-[#6C5CE7]">
+                                Mobile Dev
+                            </span>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<button class="fixed bottom-[96px] right-6 w-14 h-14 rounded-full bg-[var(--accent)] text-white flex items-center justify-center shadow-lg active:scale-90 transition-transform z-20">
+<span class="material-symbols-outlined text-[32px]">add</span>
+</button>
+<nav class="fixed bottom-0 left-0 right-0 bg-[var(--surface)] border-t border-[var(--border)] px-6 pt-3 pb-8 flex justify-around items-center z-10">
+<div class="flex flex-col items-center gap-1 opacity-40">
+<span class="material-symbols-outlined text-[26px]">calendar_today</span>
+<span class="text-[10px] font-medium">Hoje</span>
+</div>
+<div class="flex flex-col items-center gap-1 text-[var(--accent)]">
+<span class="material-symbols-outlined material-symbols-filled text-[26px]">check_box</span>
+<span class="text-[10px] font-bold">Tarefas</span>
+</div>
+<div class="flex flex-col items-center gap-1 opacity-40">
+<span class="material-symbols-outlined text-[26px]">settings</span>
+<span class="text-[10px] font-medium">Config</span>
+</div>
+</nav>
+
+</body></html>

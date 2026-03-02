@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Configurações - Grade App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-bg: rgba(108, 92, 231, 0.15);
+            --danger: #FF6B6B;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            -webkit-tap-highlight-color: transparent;
+        }
+        .ios-list-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="pb-24">
+<div class="h-12 w-full"></div>
+<main class="px-5">
+<header class="py-6">
+<h1 class="text-[28px] font-bold tracking-tight text-[var(--text-primary)]">Configurações</h1>
+</header>
+<section class="mb-8">
+<div class="bg-[var(--surface)] rounded-[16px] p-4 flex items-center justify-between active:bg-[var(--surface-elevated)] transition-colors">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-[var(--accent)] flex items-center justify-center text-white text-xl font-bold shadow-lg">
+                        LD
+                    </div>
+<div>
+<h2 class="text-lg font-semibold text-[var(--text-primary)] leading-tight">Lucas Dorice</h2>
+<p class="text-sm text-[var(--text-secondary)]">lucas.dorice@estudante.com</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-[var(--text-tertiary)]">chevron_right</span>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-[12px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)] px-1 mb-2">Aparência</h3>
+<div class="bg-[var(--surface)] rounded-[16px] overflow-hidden">
+<div class="flex items-center justify-between p-4 ios-list-item border-b border-[var(--border)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--accent)]">dark_mode</span>
+<span class="text-[16px]">Tema Escuro</span>
+</div>
+<div class="w-12 h-7 bg-[var(--accent)] rounded-full relative p-1 flex items-center justify-end">
+<div class="w-5 h-5 bg-white rounded-full shadow-sm"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-[12px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)] px-1 mb-2">Grade</h3>
+<div class="bg-[var(--surface)] rounded-[16px] overflow-hidden">
+<div class="flex items-center justify-between p-4 ios-list-item border-b border-[var(--border)] active:bg-[var(--surface-elevated)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--text-secondary)]">calendar_today</span>
+<span class="text-[16px]">Semestre Ativo</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="text-[var(--text-secondary)]">2026.1</span>
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-xl">chevron_right</span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 ios-list-item border-b border-[var(--border)] active:bg-[var(--surface-elevated)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--text-secondary)]">book</span>
+<span class="text-[16px]">Gerenciar Disciplinas</span>
+</div>
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-xl">chevron_right</span>
+</div>
+<div class="flex items-center justify-between p-4 ios-list-item active:bg-[var(--surface-elevated)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--accent)]">add_circle</span>
+<span class="text-[16px] text-[var(--accent)] font-medium">Novo Semestre</span>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-[12px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)] px-1 mb-2">Sobre</h3>
+<div class="bg-[var(--surface)] rounded-[16px] overflow-hidden">
+<div class="flex items-center justify-between p-4 ios-list-item border-b border-[var(--border)]">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[var(--text-secondary)]">info</span>
+<span class="text-[16px]">Versão</span>
+</div>
+<span class="text-[var(--text-secondary)] text-sm">1.0.0 MVP</span>
+</div>
+<div class="p-4 flex flex-col items-center justify-center gap-1">
+<p class="text-[13px] text-[var(--text-tertiary)]">Feito com 💜 por Lucas Dorice</p>
+</div>
+</div>
+</section>
+<button class="w-full bg-[var(--surface)] text-[var(--danger)] py-4 rounded-[16px] font-semibold active:opacity-70 transition-opacity">
+            Sair da conta
+        </button>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-[var(--surface)] border-t border-[var(--border)] px-8 py-3 flex justify-between items-center z-50 pb-8">
+<div class="flex flex-col items-center opacity-40">
+<span class="material-symbols-outlined text-[24px]">calendar_today</span>
+<span class="text-[10px] mt-1 font-medium">Hoje</span>
+</div>
+<div class="flex flex-col items-center opacity-40">
+<span class="material-symbols-outlined text-[24px]">check_box</span>
+<span class="text-[10px] mt-1 font-medium">Tarefas</span>
+</div>
+<div class="flex flex-col items-center text-[var(--accent)]">
+<span class="material-symbols-outlined text-[24px] fill-[1]">settings</span>
+<span class="text-[10px] mt-1 font-bold">Config</span>
+</div>
+</nav>
+
+</body></html>

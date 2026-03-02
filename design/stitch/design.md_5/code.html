@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Lesson Notes Details</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-[#0D0D0F] text-[#F5F5F7] font-['Inter'];
+                -webkit-tap-highlight-color: transparent;
+            }
+        }
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --accent-bg: #6C5CE720;
+            --subject-color: #6C5CE7;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col h-screen overflow-hidden">
+<header class="pt-12 pb-2 px-4 flex items-center border-b border-[var(--border)] bg-[var(--background)]">
+<button class="mr-3 p-1">
+<span class="material-symbols-outlined text-[var(--accent)] text-2xl">arrow_back_ios</span>
+</button>
+<div class="flex-1">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--subject-color)]"></div>
+<h2 class="text-[22px] font-semibold tracking-tight text-[var(--text-primary)] leading-tight">Cálculo Diferencial e Integral I</h2>
+</div>
+<p class="text-[12px] font-medium text-[var(--text-secondary)] mt-0.5">01 de Março · 08:00 – 09:40</p>
+</div>
+</header>
+<nav class="flex px-4 border-b border-[var(--border)] bg-[var(--background)]">
+<div class="flex-1 relative flex justify-center py-3 border-b-2 border-[var(--accent)]">
+<span class="text-sm font-semibold text-[var(--accent)]">Anotações</span>
+</div>
+<div class="flex-1 flex justify-center py-3">
+<span class="text-sm font-medium text-[var(--text-tertiary)]">Código</span>
+</div>
+<div class="flex-1 flex justify-center py-3">
+<span class="text-sm font-medium text-[var(--text-tertiary)]">Links</span>
+</div>
+</nav>
+<main class="flex-1 overflow-y-auto relative p-5">
+<div class="min-h-full">
+<div class="outline-none text-base text-[var(--text-primary)] leading-relaxed min-h-[300px]" contenteditable="true" data-placeholder="O que foi discutido na aula de hoje?">
+<p class="text-[var(--text-tertiary)] pointer-events-none">O que foi discutido na aula de hoje?</p>
+</div>
+</div>
+</main>
+<div class="pb-8 pt-2 px-4 bg-[var(--surface-elevated)] border-t border-[var(--border)] shadow-2xl">
+<div class="flex items-center justify-between max-w-sm mx-auto">
+<button class="p-2 flex items-center justify-center text-[var(--text-secondary)] active:text-[var(--accent)]">
+<span class="material-symbols-outlined font-bold">format_bold</span>
+</button>
+<button class="p-2 flex items-center justify-center text-[var(--text-secondary)] active:text-[var(--accent)]">
+<span class="material-symbols-outlined">format_italic</span>
+</button>
+<button class="p-2 flex items-center justify-center text-[var(--text-secondary)] active:text-[var(--accent)]">
+<span class="material-symbols-outlined">format_list_bulleted</span>
+</button>
+<button class="p-2 flex items-center justify-center text-[var(--text-secondary)] active:text-[var(--accent)]">
+<span class="material-symbols-outlined">title</span>
+</button>
+<div class="h-6 w-px bg-[var(--border)]"></div>
+<button class="p-2 flex items-center justify-center text-[var(--text-secondary)] active:text-[var(--accent)]">
+<span class="material-symbols-outlined">image</span>
+</button>
+<button class="bg-[var(--accent)] text-white h-8 px-4 rounded-full text-sm font-semibold">
+                Salvar
+            </button>
+</div>
+</div>
+
+</body></html>

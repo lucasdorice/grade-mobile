@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Daily Timeline Today - Grade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        @layer base {
+            body {
+                font-family: 'Inter', sans-serif;
+                @apply bg-[#0D0D0F] text-[#F5F5F7];
+            }
+        }
+        :root {
+            --background: #0D0D0F;
+            --surface: #1A1A1F;
+            --surface-elevated: #242429;
+            --border: #2E2E35;
+            --text-primary: #F5F5F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #636366;
+            --accent: #6C5CE7;
+            --success: #00B894;
+            --warning: #FDCB6E;
+            --danger: #FF6B6B;
+            --info: #74B9FF;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col min-h-screen">
+<header class="px-6 pt-12 pb-4">
+<div class="flex justify-between items-start">
+<div>
+<h2 class="text-[22px] font-semibold text-[var(--text-primary)]">Olá, Lucas 👋</h2>
+<p class="text-[14px] text-[var(--text-secondary)] mt-0.5">Sábado, 1 de Março</p>
+</div>
+<button class="w-10 h-10 rounded-full bg-[var(--surface)] border border-[var(--border)] flex items-center justify-center">
+<span class="material-symbols-outlined text-[var(--text-primary)] text-[20px]">notifications</span>
+</button>
+</div>
+<div class="mt-8 flex items-center justify-center gap-4 text-[14px] font-medium">
+<button class="text-[var(--text-tertiary)] flex items-center">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+                Ontem
+            </button>
+<span class="px-4 py-1.5 rounded-full bg-[var(--accent)] text-white">Hoje</span>
+<button class="text-[var(--text-tertiary)] flex items-center">
+                Amanhã
+                <span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-6 py-4 space-y-4 overflow-y-auto pb-24">
+<div class="bg-[var(--surface)] rounded-[12px] p-4 flex gap-4 border border-[var(--border)] shadow-sm">
+<div class="w-1 rounded-full h-auto bg-[#6C5CE7]"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-[18px] font-semibold text-[var(--text-primary)]">Estrutura de Dados</h3>
+<span class="text-[12px] font-medium text-[var(--success)] bg-[#00B89420] px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                        Anotado
+                    </span>
+</div>
+<p class="text-[12px] font-medium text-[var(--text-tertiary)] mt-0.5">Prof. Ricardo Oliveira</p>
+<div class="mt-3 flex items-center gap-2 text-[14px] text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    08:00 – 09:40
+                </div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-[12px] p-4 flex gap-4 border border-[var(--border)] shadow-sm">
+<div class="w-1 rounded-full h-auto bg-[#FF6B6B]"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-[18px] font-semibold text-[var(--text-primary)]">Cálculo Diferencial</h3>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)] bg-[#2E2E35] px-2 py-0.5 rounded-full">
+                        Sem anotação
+                    </span>
+</div>
+<p class="text-[12px] font-medium text-[var(--text-tertiary)] mt-0.5">Dra. Maria Helena</p>
+<div class="mt-3 flex items-center gap-2 text-[14px] text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    10:00 – 11:40
+                </div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-[12px] p-4 flex gap-4 border border-[var(--border)] shadow-sm">
+<div class="w-1 rounded-full h-auto bg-[#00B894]"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-[18px] font-semibold text-[var(--text-primary)]">Desenvolvimento Mobile</h3>
+<span class="text-[12px] font-medium text-[var(--success)] bg-[#00B89420] px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">edit_note</span>
+                        Anotado
+                    </span>
+</div>
+<p class="text-[12px] font-medium text-[var(--text-tertiary)] mt-0.5">Prof. Lucas Dorice</p>
+<div class="mt-3 flex items-center gap-2 text-[14px] text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    13:30 – 15:10
+                </div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-[12px] p-4 flex gap-4 border border-[var(--border)] shadow-sm">
+<div class="w-1 rounded-full h-auto bg-[#74B9FF]"></div>
+<div class="flex-1">
+<div class="flex justify-between items-start">
+<h3 class="text-[18px] font-semibold text-[var(--text-primary)]">Interface Humano-Computador</h3>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)] bg-[#2E2E35] px-2 py-0.5 rounded-full">
+                        Sem anotação
+                    </span>
+</div>
+<p class="text-[12px] font-medium text-[var(--text-tertiary)] mt-0.5">Prof. Ana Beatriz</p>
+<div class="mt-3 flex items-center gap-2 text-[14px] text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+                    15:30 – 17:10
+                </div>
+</div>
+</div>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 bg-[var(--surface)] border-t border-[var(--border)] px-8 pb-8 pt-3 flex justify-between items-center z-50">
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined filled text-[var(--accent)] text-[26px]">calendar_today</span>
+<span class="text-[10px] font-medium text-[var(--accent)]">Hoje</span>
+</div>
+<div class="flex flex-col items-center gap-1">
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-[26px]">check_box</span>
+<span class="text-[10px] font-medium text-[var(--text-tertiary)]">Tarefas</span>
+</div>
+<div class="flex flex-col items-center gap-1 relative">
+<span class="material-symbols-outlined text-[var(--text-tertiary)] text-[26px]">settings</span>
+<span class="text-[10px] font-medium text-[var(--text-tertiary)]">Config</span>
+</div>
+</nav>
+
+</body></html>
