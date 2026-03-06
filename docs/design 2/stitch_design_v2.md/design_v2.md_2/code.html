@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding Ready Grid - Grade App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+:root {
+  --background: #0F0F13;
+  --surface: #1C1C24;
+  --surface-elevated: #262630;
+  --border: #32323E;
+  --text-primary: #F2F2F7;
+  --text-secondary: #8E8E93;
+  --text-tertiary: #56566A;
+  --accent: #7C6AF4;
+  --accent-soft: rgba(124, 106, 244, 0.15);
+  --coral: #FF6B6B;
+  --purple: #7C6AF4;
+  --green: #34C78B;
+  --yellow: #FFB84D;
+  --blue: #5B9BF5;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen flex flex-col items-center justify-center p-6 sm:p-0">
+<div class="w-full max-w-[393px] h-[852px] bg-[var(--background)] flex flex-col relative sm:rounded-[3rem] sm:border-[8px] sm:border-[#1C1C24] sm:shadow-2xl overflow-hidden">
+<div class="h-12 w-full flex justify-between items-center px-6 pt-2 shrink-0">
+<div class="text-[15px] font-semibold text-white tracking-tight">9:41</div>
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-white" style="font-variation-settings: 'FILL' 1;">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px] text-white" style="font-variation-settings: 'FILL' 1;">wifi</span>
+<span class="material-symbols-outlined text-[20px] text-white" style="font-variation-settings: 'FILL' 1;">battery_full_alt</span>
+</div>
+</div>
+<div class="flex-1 px-6 pt-12 pb-8 flex flex-col h-full">
+<div class="flex justify-center gap-2 mb-8 shrink-0">
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+</div>
+<div class="text-center mb-6 shrink-0">
+<h1 class="text-[24px] leading-[32px] font-bold text-[var(--text-primary)] mb-2">Sua grade está pronta! 🎓</h1>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)]">Aqui está um resumo das suas aulas</p>
+</div>
+<div class="bg-[var(--surface)] rounded-[16px] p-4 flex-1 mb-8 flex flex-col overflow-hidden min-h-0">
+<div class="flex mb-2 shrink-0">
+<div class="w-10"></div> 
+<div class="flex-1 flex justify-around text-[12px] font-medium text-[var(--text-secondary)]">
+<div class="text-center w-full">Seg</div>
+<div class="text-center w-full">Ter</div>
+<div class="text-center w-full">Qua</div>
+<div class="text-center w-full">Qui</div>
+<div class="text-center w-full">Sex</div>
+</div>
+</div>
+<div class="flex-1 relative flex">
+<div class="w-10 flex flex-col justify-between text-[10px] text-[var(--text-tertiary)] py-2 shrink-0">
+<div>08:00</div>
+<div>10:00</div>
+<div>12:00</div>
+<div>14:00</div>
+<div>16:00</div>
+</div>
+<div class="flex-1 grid grid-cols-5 gap-1 relative border-l border-t border-[var(--border)] border-opacity-30">
+<div class="absolute inset-0 flex flex-col justify-between pointer-events-none">
+<div class="h-[1px] w-full bg-[var(--border)] opacity-30"></div>
+<div class="h-[1px] w-full bg-[var(--border)] opacity-30"></div>
+<div class="h-[1px] w-full bg-[var(--border)] opacity-30"></div>
+<div class="h-[1px] w-full bg-[var(--border)] opacity-30"></div>
+<div class="h-[1px] w-full bg-[var(--border)] opacity-30"></div>
+</div>
+<div class="relative w-full h-full border-r border-[var(--border)] border-opacity-30">
+<div class="absolute top-[0%] h-[25%] left-1 right-1 bg-[var(--coral)] bg-opacity-20 border-l-[3px] border-[var(--coral)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--coral)] leading-tight block">Cálculo I</span>
+</div>
+<div class="absolute top-[75%] h-[25%] left-1 right-1 bg-[var(--purple)] bg-opacity-20 border-l-[3px] border-[var(--purple)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--purple)] leading-tight block">Física</span>
+</div>
+</div>
+<div class="relative w-full h-full border-r border-[var(--border)] border-opacity-30">
+<div class="absolute top-[25%] h-[25%] left-1 right-1 bg-[var(--green)] bg-opacity-20 border-l-[3px] border-[var(--green)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--green)] leading-tight block">Algor...</span>
+</div>
+</div>
+<div class="relative w-full h-full border-r border-[var(--border)] border-opacity-30">
+<div class="absolute top-[0%] h-[25%] left-1 right-1 bg-[var(--coral)] bg-opacity-20 border-l-[3px] border-[var(--coral)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--coral)] leading-tight block">Cálculo I</span>
+</div>
+</div>
+<div class="relative w-full h-full border-r border-[var(--border)] border-opacity-30">
+<div class="absolute top-[25%] h-[25%] left-1 right-1 bg-[var(--green)] bg-opacity-20 border-l-[3px] border-[var(--green)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--green)] leading-tight block">Algor...</span>
+</div>
+<div class="absolute top-[75%] h-[25%] left-1 right-1 bg-[var(--blue)] bg-opacity-20 border-l-[3px] border-[var(--blue)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--blue)] leading-tight block">Inglês</span>
+</div>
+</div>
+<div class="relative w-full h-full border-r border-[var(--border)] border-opacity-30">
+<div class="absolute top-[0%] h-[25%] left-1 right-1 bg-[var(--purple)] bg-opacity-20 border-l-[3px] border-[var(--purple)] rounded-[4px] p-1 overflow-hidden">
+<span class="text-[10px] font-semibold text-[var(--purple)] leading-tight block">Física</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="shrink-0 pt-2 pb-6">
+<button class="w-full h-[56px] bg-[var(--accent)] text-white text-[16px] font-semibold rounded-[16px] flex items-center justify-center active:opacity-80 transition-opacity">
+          Começar a usar! 🚀
+        </button>
+</div>
+</div>
+<div class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[134px] h-[5px] bg-white rounded-full opacity-50"></div>
+</div>
+
+</body></html>

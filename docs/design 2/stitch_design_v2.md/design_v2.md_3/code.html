@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Settings Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --background: #0F0F13;
+      --surface: #1C1C24;
+      --surface-elevated: #262630;
+      --border: #32323E;
+      --text-primary: #F2F2F7;
+      --text-secondary: #8E8E93;
+      --text-tertiary: #56566A;
+      --accent: #7C6AF4;
+      --accent-soft: rgba(124, 106, 244, 0.15);
+      --danger: #FF5C5C;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-primary);
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .safe-area-top {
+      padding-top: 48px;
+    }
+    .safe-area-bottom {
+      padding-bottom: 24px;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="flex flex-col h-screen overflow-hidden">
+<div class="flex-1 overflow-y-auto safe-area-top px-6 pb-[88px]">
+<header class="mb-6">
+<h1 class="text-[24px] font-bold leading-[32px] text-[var(--text-primary)]">Configurações</h1>
+</header>
+<section class="mb-8">
+<div class="bg-[var(--surface)] rounded-[16px] p-5 flex items-center cursor-pointer active:opacity-80 transition-opacity">
+<div class="w-12 h-12 rounded-full bg-[var(--accent)] flex items-center justify-center mr-4 shrink-0">
+<span class="text-[17px] font-bold text-white">LD</span>
+</div>
+<div class="flex-1">
+<h2 class="text-[20px] font-semibold leading-[28px] text-[var(--text-primary)]">Lucas Dorice</h2>
+<p class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)] mt-0.5">Toque para editar</p>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)] tracking-[1px] mb-2 px-1 uppercase">GRADE</h3>
+<div class="bg-[var(--surface)] rounded-[16px] overflow-hidden">
+<div class="h-14 px-4 flex items-center justify-between cursor-pointer active:bg-[var(--surface-elevated)] transition-colors">
+<div class="flex items-center">
+<span class="material-symbols-outlined text-[20px] text-[var(--accent)] mr-3">menu_book</span>
+<span class="text-[16px] font-normal leading-[24px] text-[var(--text-primary)]">Gerenciar matérias</span>
+</div>
+<span class="material-symbols-outlined text-[20px] text-[var(--text-tertiary)]">chevron_right</span>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h3 class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)] tracking-[1px] mb-2 px-1 uppercase">SOBRE</h3>
+<div class="bg-[var(--surface)] rounded-[16px] overflow-hidden">
+<div class="h-14 px-4 flex items-center justify-between border-b border-[var(--border)]">
+<span class="text-[16px] font-normal leading-[24px] text-[var(--text-primary)]">Versão</span>
+<span class="text-[14px] font-normal leading-[20px] text-[var(--text-secondary)]">1.0.0 MVP</span>
+</div>
+<div class="px-4 py-4 flex items-center justify-center">
+<span class="text-[14px] font-normal leading-[20px] text-[var(--text-tertiary)]">Feito com 💜 por Lucas Dorice</span>
+</div>
+</div>
+</section>
+</div>
+<nav class="fixed bottom-0 left-0 right-0 bg-[var(--surface)] border-t border-[var(--border)] h-[64px] safe-area-bottom flex items-center justify-around z-50">
+<button class="flex flex-col items-center justify-center w-16 h-full gap-1">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">calendar_today</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Hoje</span>
+</button>
+<button class="flex flex-col items-center justify-center w-16 h-full gap-1">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">description</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Notas</span>
+</button>
+<button class="flex flex-col items-center justify-center w-16 h-full gap-1">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">check_circle</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Tarefas</span>
+</button>
+<button class="flex flex-col items-center justify-center w-16 h-full gap-1 relative">
+<span class="material-symbols-outlined text-[24px] text-[var(--accent)]">settings</span>
+<span class="text-[12px] font-medium text-[var(--accent)]">Config</span>
+<div class="absolute bottom-1.5 w-1 h-1 rounded-full bg-[var(--accent)]"></div>
+</button>
+</nav>
+
+</body></html>

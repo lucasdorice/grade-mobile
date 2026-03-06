@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Onboarding Welcome Screen - Grade App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --bg-start: #0F0F13;
+      --bg-end: #1A1A2E;
+      --accent: #7C6AF4;
+      --text-primary: #F2F2F7;
+      --text-secondary: #8E8E93;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            bgStart: 'var(--bg-start)',
+            bgEnd: 'var(--bg-end)',
+            accent: 'var(--accent)',
+            textPrimary: 'var(--text-primary)',
+            textSecondary: 'var(--text-secondary)',
+          },
+          fontSize: {
+            'heading-xl': ['28px', '36px'],
+            'body': ['16px', '24px'],
+            'button': ['16px', '24px'],
+          },
+          borderRadius: {
+            'lg': '16px',
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gradient-to-b from-bgStart to-bgEnd min-h-screen text-textPrimary flex flex-col items-center justify-between px-6 pt-12 pb-[env(safe-area-inset-bottom,24px)] antialiased select-none">
+<div class="flex-1 flex flex-col items-center justify-center w-full">
+<div class="flex items-center justify-center w-[80px] h-[80px] text-accent mb-6">
+<span class="material-symbols-outlined text-[80px]">school</span>
+</div>
+<h1 class="text-heading-xl font-bold text-textPrimary mb-2">Grade</h1>
+<p class="text-body font-normal text-textSecondary text-center max-w-[280px]">
+      Organize suas aulas, anotações e prazos em um só lugar.
+    </p>
+</div>
+<div class="w-full pb-8">
+<button class="w-full h-[56px] bg-accent rounded-lg flex items-center justify-center text-white font-semibold text-button transition-opacity active:opacity-80">
+      Começar
+    </button>
+</div>
+
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>All Notes List</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0F0F13;
+            --surface: #1C1C24;
+            --surface-elevated: #262630;
+            --border: #32323E;
+            --text-primary: #F2F2F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #56566A;
+            --accent: #7C6AF4;
+            --accent-soft: rgba(124, 106, 244, 0.15);--color-1: #FF6B6B;--color-2: #7C6AF4;--color-3: #34C78B;--color-4: #FFB84D;}
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased h-screen flex justify-center bg-black">
+<div class="w-full max-w-[390px] h-full sm:h-[844px] bg-[var(--background)] relative flex flex-col overflow-hidden sm:rounded-[40px] sm:border-[8px] sm:border-gray-800 shadow-2xl">
+<div class="h-12 w-full flex justify-between items-center px-6 pt-4 shrink-0">
+<span class="text-[15px] font-semibold tracking-tight">9:41</span>
+<div class="flex gap-1.5 items-center">
+<span class="material-symbols-outlined text-[18px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[18px]">wifi</span>
+<span class="material-symbols-outlined text-[18px]">battery_full</span>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto no-scrollbar pb-24 px-6 pt-2">
+<div class="mb-4">
+<h1 class="text-[24px] font-bold leading-[32px]">Notas</h1>
+</div>
+<div class="relative mb-5">
+<div class="absolute inset-y-0 left-0 pl-[14px] flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-[20px] text-[var(--text-tertiary)]">search</span>
+</div>
+<input class="block w-full h-12 pl-10 pr-4 bg-[var(--surface)] border-none rounded-xl text-[14px] text-[var(--text-primary)] placeholder-[var(--text-tertiary)] focus:ring-1 focus:ring-[var(--accent)]" placeholder="Buscar nas anotações..." type="text"/>
+</div>
+<div class="flex overflow-x-auto no-scrollbar gap-2 mb-6 pb-1 -mx-6 px-6">
+<button class="flex items-center h-9 px-[14px] bg-[var(--accent-soft)] rounded-full shrink-0">
+<span class="text-[14px] font-medium text-[var(--accent)]">Todas</span>
+</button>
+<button class="flex items-center h-9 px-[14px] bg-[var(--surface)] border border-[var(--border)] rounded-full gap-2 shrink-0">
+<div class="w-2 h-2 rounded-full bg-[var(--color-1)]"></div>
+<span class="text-[14px] font-medium text-[var(--text-secondary)]">Cálculo I</span>
+</button>
+<button class="flex items-center h-9 px-[14px] bg-[var(--surface)] border border-[var(--border)] rounded-full gap-2 shrink-0">
+<div class="w-2 h-2 rounded-full bg-[var(--color-3)]"></div>
+<span class="text-[14px] font-medium text-[var(--text-secondary)]">Física II</span>
+</button>
+<button class="flex items-center h-9 px-[14px] bg-[var(--surface)] border border-[var(--border)] rounded-full gap-2 shrink-0">
+<div class="w-2 h-2 rounded-full bg-[var(--color-4)]"></div>
+<span class="text-[14px] font-medium text-[var(--text-secondary)]">Algoritmos</span>
+</button>
+</div>
+<div class="flex flex-col gap-3">
+<div class="bg-[var(--surface)] rounded-xl p-4 active:opacity-70 transition-opacity">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--color-1)]"></div>
+<span class="text-[12px] font-medium text-[var(--color-1)]">Cálculo I</span>
+<span class="text-[12px] text-[var(--text-secondary)]">·</span>
+<span class="text-[12px] font-medium text-[var(--text-secondary)]">05 de Março</span>
+</div>
+<p class="text-[14px] leading-[20px] text-[var(--text-primary)] line-clamp-3">
+                        Revisão de limites e introdução às derivadas. A regra da cadeia é fundamental para resolver funções compostas. O professor deu exemplos de x^2 * sin(x) e como aplicar a regra do produto junto com a regra da cadeia. Próxima aula teremos lista de exercícios.
+                    </p>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 active:opacity-70 transition-opacity">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--color-3)]"></div>
+<span class="text-[12px] font-medium text-[var(--color-3)]">Física II</span>
+<span class="text-[12px] text-[var(--text-secondary)]">·</span>
+<span class="text-[12px] font-medium text-[var(--text-secondary)]">04 de Março</span>
+</div>
+<p class="text-[14px] leading-[20px] text-[var(--text-primary)] line-clamp-3">
+                        Termodinâmica básica. Leis da termodinâmica e o conceito de entropia. Fórmula de PV=nRT discutida com vários exemplos práticos. Importante lembrar das conversões de temperatura (Kelvin é mandatório nas fórmulas).
+                    </p>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 active:opacity-70 transition-opacity">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--color-4)]"></div>
+<span class="text-[12px] font-medium text-[var(--color-4)]">Algoritmos</span>
+<span class="text-[12px] text-[var(--text-secondary)]">·</span>
+<span class="text-[12px] font-medium text-[var(--text-secondary)]">02 de Março</span>
+</div>
+<p class="text-[14px] leading-[20px] text-[var(--text-primary)] line-clamp-3">
+                        Estruturas de dados em C. Ponteiros e alocação dinâmica de memória usando malloc e free. Criamos nossa primeira lista encadeada simples. O erro de segmentation fault acontece quando tentamos acessar memória não alocada.
+                    </p>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 active:opacity-70 transition-opacity">
+<div class="flex items-center gap-2 mb-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--color-1)]"></div>
+<span class="text-[12px] font-medium text-[var(--color-1)]">Cálculo I</span>
+<span class="text-[12px] text-[var(--text-secondary)]">·</span>
+<span class="text-[12px] font-medium text-[var(--text-secondary)]">28 de Fevereiro</span>
+</div>
+<p class="text-[14px] leading-[20px] text-[var(--text-primary)] line-clamp-3">
+                        Resolução da lista 1 sobre limites. Teorema do confronto (sanduíche) provou ser útil na questão 4b. Limites laterais devem ser iguais para que o limite exista num ponto específico.
+                    </p>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 w-full h-[88px] bg-[var(--surface)] border-t border-[var(--border)] flex px-2 pb-6 pt-2 shrink-0 z-10">
+<button class="flex-1 flex flex-col items-center justify-center gap-1 group">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">calendar_today</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Hoje</span>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center gap-1 relative">
+<span class="material-symbols-outlined text-[24px] text-[var(--accent)]">description</span>
+<span class="text-[12px] font-medium text-[var(--accent)]">Notas</span>
+<div class="absolute bottom-[-6px] w-1 h-1 rounded-full bg-[var(--accent)]"></div>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">event_available</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Tarefas</span>
+</button>
+<button class="flex-1 flex flex-col items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)]">settings</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Config</span>
+</button>
+</div>
+<div class="absolute bottom-2 w-full flex justify-center z-20 pointer-events-none">
+<div class="w-[134px] h-[5px] bg-white rounded-full opacity-80"></div>
+</div>
+</div>
+
+</body></html>

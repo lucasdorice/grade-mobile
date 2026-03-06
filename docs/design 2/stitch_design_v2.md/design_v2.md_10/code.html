@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Home Today Schedule - Grade App</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+    :root {
+      --background: #0F0F13;
+      --surface: #1C1C24;
+      --surface-elevated: #262630;
+      --border: #32323E;
+      --text-primary: #F2F2F7;
+      --text-secondary: #8E8E93;
+      --text-tertiary: #56566A;
+      --accent: #7C6AF4;
+      --accent-soft: rgba(124, 106, 244, 0.15);
+      --success: #34C78B;
+      --success-soft: rgba(52, 199, 139, 0.15);
+      --warning: #FFB84D;
+      --danger: #FF5C5C;
+      --subject-1: #FF6B6B;
+      --subject-2: #7C6AF4;
+      --subject-3: #34C78B;
+      --subject-4: #FFB84D;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-primary);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased flex justify-center items-center min-h-screen bg-black">
+<div class="w-[393px] h-[852px] bg-[var(--background)] relative overflow-hidden flex flex-col shadow-2xl rounded-[40px] border-[8px] border-gray-900">
+<div class="flex-1 overflow-y-auto pb-[90px] px-6 pt-12">
+<header class="mb-6">
+<h1 class="text-[28px] leading-[36px] font-bold text-[var(--text-primary)] tracking-tight">Olá, Lucas 👋</h1>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)] mt-1">Quinta, 5 de Março</p>
+</header>
+<div class="flex flex-col gap-3">
+<div class="bg-[var(--surface)] rounded-xl p-4 flex flex-row items-stretch cursor-pointer active:scale-[0.98] transition-transform">
+<div class="w-1 rounded-full bg-[var(--subject-1)]"></div>
+<div class="ml-[14px] flex-1">
+<h2 class="text-[20px] leading-[28px] font-semibold text-[var(--text-primary)]">Cálculo I</h2>
+<div class="flex items-center mt-1">
+<span class="material-symbols-outlined text-[16px] text-[var(--text-tertiary)] mr-1.5">schedule</span>
+<span class="text-[14px] leading-[20px] text-[var(--text-secondary)]">08:00 – 09:40</span>
+</div>
+<div class="mt-2 inline-flex items-center justify-center bg-[var(--success-soft)] px-2.5 py-1 rounded-full">
+<span class="text-[12px] font-medium leading-[16px] text-[var(--success)]">📝 Anotado</span>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 flex flex-row items-stretch cursor-pointer active:scale-[0.98] transition-transform">
+<div class="w-1 rounded-full bg-[var(--subject-2)]"></div>
+<div class="ml-[14px] flex-1">
+<h2 class="text-[20px] leading-[28px] font-semibold text-[var(--text-primary)]">Física II</h2>
+<div class="flex items-center mt-1">
+<span class="material-symbols-outlined text-[16px] text-[var(--text-tertiary)] mr-1.5">schedule</span>
+<span class="text-[14px] leading-[20px] text-[var(--text-secondary)]">10:00 – 11:40</span>
+</div>
+<div class="mt-2 inline-flex items-center justify-center bg-[var(--surface-elevated)] px-2.5 py-1 rounded-full">
+<span class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)]">Sem anotação</span>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 flex flex-row items-stretch cursor-pointer active:scale-[0.98] transition-transform">
+<div class="w-1 rounded-full bg-[var(--subject-3)]"></div>
+<div class="ml-[14px] flex-1">
+<h2 class="text-[20px] leading-[28px] font-semibold text-[var(--text-primary)]">Programação Web</h2>
+<div class="flex items-center mt-1">
+<span class="material-symbols-outlined text-[16px] text-[var(--text-tertiary)] mr-1.5">schedule</span>
+<span class="text-[14px] leading-[20px] text-[var(--text-secondary)]">13:30 – 15:10</span>
+</div>
+<div class="mt-2 inline-flex items-center justify-center bg-[var(--surface-elevated)] px-2.5 py-1 rounded-full">
+<span class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)]">Sem anotação</span>
+</div>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 flex flex-row items-stretch cursor-pointer active:scale-[0.98] transition-transform">
+<div class="w-1 rounded-full bg-[var(--subject-4)]"></div>
+<div class="ml-[14px] flex-1">
+<h2 class="text-[20px] leading-[28px] font-semibold text-[var(--text-primary)]">Sistemas Operacionais</h2>
+<div class="flex items-center mt-1">
+<span class="material-symbols-outlined text-[16px] text-[var(--text-tertiary)] mr-1.5">schedule</span>
+<span class="text-[14px] leading-[20px] text-[var(--text-secondary)]">15:30 – 17:10</span>
+</div>
+<div class="mt-2 inline-flex items-center justify-center bg-[var(--surface-elevated)] px-2.5 py-1 rounded-full">
+<span class="text-[12px] font-medium leading-[16px] text-[var(--text-tertiary)]">Sem anotação</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute bottom-0 w-full h-[88px] bg-[var(--surface)] border-t border-[var(--border)] flex flex-row justify-between items-center px-6 pb-6 pt-2">
+<div class="flex flex-col items-center justify-center flex-1 cursor-pointer">
+<span class="material-symbols-outlined text-[24px] text-[var(--accent)] mb-1">today</span>
+<span class="text-[12px] font-medium text-[var(--accent)]">Hoje</span>
+<div class="w-1 h-1 bg-[var(--accent)] rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center justify-center flex-1 cursor-pointer">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)] mb-1">description</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Notas</span>
+<div class="w-1 h-1 bg-transparent rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center justify-center flex-1 cursor-pointer">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)] mb-1">event</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Tarefas</span>
+<div class="w-1 h-1 bg-transparent rounded-full mt-1"></div>
+</div>
+<div class="flex flex-col items-center justify-center flex-1 cursor-pointer">
+<span class="material-symbols-outlined text-[24px] text-[var(--text-tertiary)] mb-1">settings</span>
+<span class="text-[12px] font-medium text-[var(--text-tertiary)]">Config</span>
+<div class="w-1 h-1 bg-transparent rounded-full mt-1"></div>
+</div>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Class Session Notes</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0F0F13;
+            --surface: #1C1C24;
+            --surface-elevated: #262630;
+            --border: #32323E;
+            --text-primary: #F2F2F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #56566A;
+            --accent: #7C6AF4;
+            --accent-soft: rgba(124, 106, 244, 0.15);
+            --success: #34C78B;
+            --warning: #FFB84D;
+            --danger: #FF5C5C;
+            --subject-color: #34C78B;}
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+        }
+        .safe-area-top {
+            padding-top: max(env(safe-area-inset-top), 48px);
+        }
+        .safe-area-bottom {
+            padding-bottom: max(env(safe-area-inset-bottom), 24px);
+        }::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="h-screen flex flex-col overflow-hidden">
+<header class="safe-area-top px-6 pb-4 bg-[var(--background)] flex flex-col gap-4 shrink-0">
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 flex items-center justify-center -ml-2 text-[var(--text-primary)]">
+<span class="material-symbols-outlined text-[24px]">chevron_left</span>
+</button>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-[var(--subject-color)]"></div>
+<h1 class="text-[20px] font-semibold text-[var(--text-primary)] leading-[28px]">Estrutura de Dados</h1>
+</div>
+<span class="text-[12px] font-medium text-[var(--text-secondary)] leading-[16px]">05 de Março · 08:00 – 09:40</span>
+</div>
+</div>
+<div class="bg-[var(--surface)] rounded-[12px] h-[44px] p-1 flex items-center w-full">
+<button class="flex-1 h-full rounded-[8px] bg-[var(--accent-soft)] text-[var(--accent)] text-[14px] font-semibold flex items-center justify-center transition-colors">
+                Anotações
+            </button>
+<button class="flex-1 h-full rounded-[8px] text-[var(--text-tertiary)] text-[14px] font-normal flex items-center justify-center transition-colors">
+                Tarefas
+            </button>
+</div>
+</header>
+<main class="flex-1 flex flex-col px-6 pb-6 pt-2 overflow-hidden safe-area-bottom">
+<textarea class="w-full h-full bg-transparent border-none resize-none p-0 text-[16px] leading-[24px] text-[var(--text-primary)] placeholder:text-[var(--text-tertiary)] focus:ring-0" placeholder="O que foi discutido na aula de hoje?"></textarea>
+</main>
+
+</body></html>

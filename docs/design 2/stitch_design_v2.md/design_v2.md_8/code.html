@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Grade App - Monte sua grade</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style type="text/tailwindcss">
+        :root {
+            --background: #0F0F13;
+            --surface: #1C1C24;
+            --surface-elevated: #262630;
+            --border: #32323E;
+            --text-primary: #F2F2F7;
+            --text-secondary: #8E8E93;
+            --text-tertiary: #56566A;
+            --accent: #7C6AF4;
+            --accent-soft: rgba(124, 106, 244, 0.15);
+            --success: #34C78B;
+            --warning: #FFB84D;
+            --danger: #FF5C5C;--subject-1: #FF6B6B;
+            --subject-2: #7C6AF4;
+            --subject-3: #34C78B;
+            --subject-4: #FFB84D;
+            --subject-5: #5B9BF5;
+            --subject-6: #F472B6;
+            --subject-7: #2DD4BF;
+            --subject-8: #FB923C;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background);
+            color: var(--text-primary);
+            -webkit-font-smoothing: antialiased;
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }.no-scrollbar {
+            -ms-overflow-style: none;scrollbar-width: none;}
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="h-screen w-full flex justify-center bg-black">
+<div class="w-[390px] h-[844px] bg-[var(--background)] relative overflow-hidden flex flex-col shadow-2xl">
+<div class="h-12 w-full flex-shrink-0"></div>
+<div class="flex-1 flex flex-col px-6 pt-12 pb-8 overflow-hidden">
+<div class="flex justify-center items-center gap-2 mb-8 flex-shrink-0">
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--accent)]"></div>
+<div class="w-2 h-2 rounded-full bg-[var(--border)]"></div>
+</div>
+<div class="flex-shrink-0 mb-6">
+<h1 class="text-[24px] leading-[32px] font-bold text-[var(--text-primary)]">Monte sua grade</h1>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)] mt-1">Adicione suas matérias do semestre</p>
+</div>
+<div class="flex-1 overflow-y-auto no-scrollbar pb-4 flex flex-col gap-3">
+<div class="bg-[var(--surface)] rounded-xl p-4 flex items-center">
+<div class="w-3 h-3 rounded-full bg-[var(--subject-1)] flex-shrink-0"></div>
+<div class="flex-1 ml-3">
+<h3 class="text-[17px] leading-[24px] font-semibold text-[var(--text-primary)]">Cálculo I</h3>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)]">Seg, Qua · 08:00 - 09:40</p>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full active:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-[20px] text-[var(--danger)]">delete</span>
+</button>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 flex items-center">
+<div class="w-3 h-3 rounded-full bg-[var(--subject-5)] flex-shrink-0"></div>
+<div class="flex-1 ml-3">
+<h3 class="text-[17px] leading-[24px] font-semibold text-[var(--text-primary)]">Física Experimental</h3>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)]">Ter · 10:00 - 11:40</p>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full active:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-[20px] text-[var(--danger)]">delete</span>
+</button>
+</div>
+<div class="bg-[var(--surface)] rounded-xl p-4 flex items-center">
+<div class="w-3 h-3 rounded-full bg-[var(--subject-3)] flex-shrink-0"></div>
+<div class="flex-1 ml-3">
+<h3 class="text-[17px] leading-[24px] font-semibold text-[var(--text-primary)]">Programação Web</h3>
+<p class="text-[14px] leading-[20px] text-[var(--text-secondary)]">Qui, Sex · 19:00 - 20:40</p>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full active:bg-white/5 transition-colors">
+<span class="material-symbols-outlined text-[20px] text-[var(--danger)]">delete</span>
+</button>
+</div>
+<button class="w-full h-14 rounded-xl border-2 border-dashed border-[var(--border)] flex items-center justify-center gap-2 active:bg-[var(--surface)] transition-colors mt-1">
+<span class="material-symbols-outlined text-[20px] text-[var(--text-tertiary)]">add</span>
+<span class="text-[14px] font-normal text-[var(--text-tertiary)]">Adicionar matéria</span>
+</button>
+</div>
+<div class="flex-shrink-0 flex flex-col pt-4 bg-[var(--background)]">
+<button class="w-full h-14 bg-[var(--accent)] rounded-2xl flex items-center justify-center active:opacity-80 transition-opacity">
+<span class="text-[16px] font-semibold text-white">Próximo</span>
+</button>
+<button class="w-full h-12 flex items-center justify-center mt-2 active:opacity-60 transition-opacity">
+<span class="text-[14px] font-normal text-[var(--text-secondary)]">Voltar</span>
+</button>
+</div>
+<div class="h-6 w-full flex-shrink-0"></div>
+</div>
+</div>
+
+</body></html>
